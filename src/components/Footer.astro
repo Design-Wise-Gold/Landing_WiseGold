@@ -1,0 +1,60 @@
+---
+import logotipo from "../assets/Logotipo_WiseGold_TM.svg";
+import linkedin from "../assets/linkedin_logo.svg";
+import x from "../assets/x_logo.svg";
+import instagram from "../assets/instagram_logo.svg";
+import facebook from "../assets/facebook_logo.svg";
+import youtube from "../assets/youtube_logo.svg";
+import Item__menu from "./item__menu.astro";
+
+---
+
+<footer
+    class="flex items-center lg:flex-row flex-col justify-center h-dvh md:h-fit w-full px-8 py-12 border-t-[0.2px] border-gray-500 gap-20"
+>
+    <section
+        class="w-full h-auto gap-4 flex flex-col items-center justify-center"
+    >
+        <img
+            src={logotipo.src}
+            alt="logotipo WiseGold TM"
+            class="w-full h-auto"
+        />
+        <p
+            class="text-gray-500 text-sm lg:text-base text-center lg:text-left w-full"
+        >
+            WiseGold Capital provides operational infrastructure for bullion
+            custody and coordination. We do not provide investment advice,
+            custody services, or direct client access. All services are provided
+            exclusively through approved professional intermediaries
+        </p>
+    </section>
+    <section class="w-1/2 h-auto object-cover flex flex-col gap-8">
+        <article class="flex flex-col gap-4">
+            <p class="text-white-700 text-sm text-center lg:text-right">
+                Pages
+            </p>
+            <ul class="flex flex-col items-center lg:items-end">
+                <Item__menu title="Ecosystem" link="#ecosystem" />
+      <Item__menu title="Custody & Segregation" link="#custody" />
+      <Item__menu title="Risk & Governance" link="#risk" />
+      <Item__menu title="Global Network" link="#global" />
+      <Item__menu title="For Intermediaries" link="#intermediaries" />
+            </ul>
+        </article>
+        <article class="flex flex-col w-full gap-4 justify-center lg:justify-end">
+            <div class="flex gap-4 justify-center lg:justify-end">
+                <a href="https://co.linkedin.com/company/wisegoldcapital"><img src={linkedin.src} alt=""></a>
+                <a href="https://x.com/wisegoldcapital/"><img src={x.src} alt=""></a>
+                <a href="https://www.instagram.com/wisegoldcapital/"><img src={instagram.src} alt=""></a>
+                <a href="https://www.facebook.com/wisegoldcapital/"><img src={facebook.src} alt=""></a>
+                <a href="https://www.youtube.com/@wisegoldcapital"><img src={youtube.src} alt=""></a>
+            </div>
+            <div class="flex gap-2 w-full justify-center items-center lg:justify-end">
+                <p class="text-gray-500 text-xs">©2026 All rights reserved</p>
+                <a href="https://keishmer00.github.io/" class="text-gray-500 text-xs hover:text-accent">-Design by Keishmer Pérez-</a>
+            </div>
+        </article>
+    </section>
+</footer>
+
