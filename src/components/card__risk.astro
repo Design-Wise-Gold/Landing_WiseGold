@@ -1,0 +1,22 @@
+---
+const { title, description, icon, image } = Astro.props;
+---
+
+<div class="group flex flex-col   items-left justify-left gap-2 border border-gray-500  w-full lg:w-auto hover:border-accent transition-all duration-300 hover:bg-gray-200 p-4 gap-4">
+    <div class="flex flex-row lg:flex-col text-gray-300 p-2 w-full lg:w-auto justify-center items-center gap-2 ">
+        <img src={icon} alt="icon" class="block group-hover:hidden w-8 h-8 lg:w-40 lg:h-40">
+        <h3
+            class="text-gray-500 group-hover:text-gray-300 lg:mt-3 text-sm  text-left w-full lg:w-2/3 transition-colors duration-300"
+        >
+            {title}
+        </h3>
+    </div>
+    <div>
+        <p
+            class="text-gray-500 group-hover:text-gray-300 lg:mt-3 text-sm  text-left w-full transition-colors duration-300"
+        >
+            {description}
+        </p>
+        <img src={image} alt="image" class="hidden group-hover:block w-full h-full object-cover">
+    </div>
+</div>
