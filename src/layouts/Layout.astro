@@ -10,11 +10,11 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<title>WiseGold</title>
-		
+      		
 	</head>
 	<body>
 		<!-- Gold bullion particle canvas — full page -->
-		<canvas id="gold-matrix" class="fixed inset-0 w-full h-full pointer-events-none z-[9999]" style="opacity:0.30"></canvas>
+		<canvas id="gold-matrix" class="fixed inset-0 w-full h-full pointer-events-none z-100" style="opacity:0.30"></canvas>
 		<slot />
 	</body>
 </html>
@@ -219,11 +219,19 @@
 </script>
 
 <style>
-	html,
-	body {
+	html {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		background-color: var(--color-black-900);
+		box-sizing: border-box;
+		font-family: var(--font-urbanist);
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1920px;
 		background-color: var(--color-black-900);
 		box-sizing: border-box;
 		font-family: var(--font-urbanist);

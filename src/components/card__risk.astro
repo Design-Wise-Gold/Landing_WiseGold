@@ -2,18 +2,18 @@
 const { title, description, icon, image } = Astro.props;
 ---
 
-<div class="group flex flex-col   items-left justify-left gap-2 border border-gray-500  w-full lg:w-auto hover:border-accent transition-all duration-300 hover:bg-gray-200 p-4 gap-4">
-    <div class="flex flex-row lg:flex-col text-gray-300 p-2 w-full lg:w-auto justify-center items-center gap-2 ">
-        <img src={icon} alt="icon" class="block group-hover:hidden w-8 h-8 lg:w-40 lg:h-40">
+<div class="group flex flex-col   items-left justify-left border border-gray-500  w-full lg:w-auto hover:border-accent transition-all duration-400 hover:bg-gray-200 p-4 gap-2 lg:gap-0.5 ">
+    <div class="flex flex-row lg:flex-col text-gray-300 w-full lg:w-auto justify-center items-center gap-2 ">
+        <div class="block group-hover:hidden w-8 h-8 lg:w-40 lg:h-40 bg-gray-400" style={`mask-image: url('${icon}'); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url('${icon}'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`} aria-label="icon"></div>
         <h3
-            class="text-gray-500 group-hover:text-gray-300 lg:mt-3 text-sm  text-left w-full lg:w-2/3 transition-colors duration-300"
+            class="text-white-700 group-hover:text-black-700 lg:mt-3 text-sm font-semibold w-full text-left lg:text-center transition-colors duration-300 group-hover:text-left"
         >
             {title}
         </h3>
     </div>
     <div>
         <p
-            class="text-gray-500 group-hover:text-gray-300 lg:mt-3 text-sm  text-left w-full transition-colors duration-300"
+            class="text-gray-400 group-hover:text-gray-300 lg:mt-3 text-sm  text-left w-full transition-colors duration-300"
         >
             {description}
         </p>
