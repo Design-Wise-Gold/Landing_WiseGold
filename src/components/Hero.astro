@@ -1,8 +1,10 @@
 ---
 import "../styles/global.css";
-import logotipo from "../assets/logotipo__wisegGold.svg";
+import logotipo from "../assets/Logos/logotipo__wisegGold.svg";
 import Item__menu from "./item__menu.astro";
-import video from "../assets/world.mp4";
+import video1 from "../assets/Videos/video_1.mp4";
+import video2 from "../assets/Videos/video_2.mp4";
+import video3 from "../assets/Videos/video_3.mp4";
 ---
 
 <header
@@ -13,7 +15,7 @@ import video from "../assets/world.mp4";
   >
     <a href="#"
       ><img
-        class="w-[143px] px-6 py-4 h-full"
+        class="w-[144px] px-6 py-4 h-full border-r-0 lg:border-r-[0.2px] border-gray-500 "
         src={logotipo.src}
         alt="logotipo wisegold"
       /></a
@@ -102,19 +104,19 @@ import video from "../assets/world.mp4";
   </article>
 
   <!-- Right article: video + cards -->
-  <article class="relative z-10 w-full lg:w-1/2 h-auto gap-4 flex flex-col">
+  <article class="relative z-10 w-full lg:w-2/3 h-auto gap-4 flex flex-col">
     <span class="text-white-700 text-sm flex gap-2 items-center"
       ><div class="w-2 h-2 bg-accent rounded-4xl"></div>Global Reach</span
     >
     <video
-      src={video}
+      src={video1}
       autoplay
       muted
       loop
       playsinline
-      class="w-full h-32 lg:h-full object-cover border border-gray-500 rounded-2xl lg:rounded-4xl"
+      class="w-full h-44 lg:h-full object-cover border border-gray-500 rounded-2xl lg:rounded-4xl"
     ></video>
-    <div class="flex border border-gray-500 rounded-2xl p-4 gap-4">
+    <div class="flex border border-gray-500 rounded-2xl p-4 gap-4 hover:bg-gray-900">
       <p class="flex flex-col text-white-700 text-sm gap-3">
         Operational Backbone<span class="text-gray-400 text-sm"
           >Integrated consulting, logistics, and technology for bullion
@@ -122,21 +124,21 @@ import video from "../assets/world.mp4";
         >
       </p>
       <video
-        src={video}
+        src={video2}
         autoplay
         muted
         loop
         playsinline
         class="w-20 h-20 object-cover rounded-lg"></video>
     </div>
-    <div class="border border-gray-500 rounded-2xl p-4 hidden lg:flex">
+    <div class="border border-gray-500 rounded-2xl p-4 hidden lg:flex hover:bg-gray-900">
       <p class="flex flex-col text-white-700 text-sm gap-3">
         Segregated Custody &amp; Compliance<span class="text-gray-400 text-sm"
           >Account-level segregation, independent vaults, and AML/CTF controls</span
         >
       </p>
       <video
-        src={video}
+        src={video3}
         autoplay
         muted
         loop

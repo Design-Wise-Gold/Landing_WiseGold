@@ -1,12 +1,18 @@
 ---
 import Card__Risk from "./card__risk.astro";
-import icon1 from "../assets/icon 1.svg";
-import image1 from "../assets/image1.png";
+import icon1 from "../assets/Icons/icon_1.svg";
+import icon2 from "../assets/Icons/icon_2.svg";
+import icon3 from "../assets/Icons/icon_3.svg";
+import icon4 from "../assets/Icons/icon_4.svg";
+import image1 from "../assets/Images/image_1.png";
+import image2 from "../assets/Images/image_2.png";
+import image3 from "../assets/Images/image_3.png";
+import image4 from "../assets/Images/image_4.png";
 ---
 
 <section
     id="risk"
-    class="flex flex-col items-center justify-center h-auto lg:py-24 w-full pt-8 pb-10 gap-6"
+    class="flex flex-col items-center justify-center h-full lg:py-24 w-full pt-8 pb-10 gap-6"
 >
     <article
         class="w-full h-auto flex flex-col items-center justify-center gap-2 px-4"
@@ -26,32 +32,31 @@ import image1 from "../assets/image1.png";
         </p>
     </article>
     <article
-        class="w-full h-full flex flex-col lg:flex-row items-end px-4 justify-center gap-4"
+        class="w-full flex flex-col lg:flex-row items-end px-4 justify-center gap-4 lg:min-h-[400px]"
     >
         <Card__Risk
             title="Governance Committees"
             description="Board‑level committees oversee risk, compliance, and operational integrity. Clear separation exists between executive functions and oversight roles"
             icon={icon1.src}
-            image={icon1.src}
+            image={image1.src}
         />
         <Card__Risk
             title="AML/CTF Framework"
             description="Comprehensive anti‑money laundering and counter‑terrorism financing protocols, including intermediary due diligence, transaction monitoring, and regulatory"
-            icon={icon1.src}
-            icon={icon1.src}
-            image={image1.src}
+            icon={icon2.src}
+            image={image2.src}
         />
         <Card__Risk
             title="Operational Controls"
             description="Daily position reconciliations, segregation verification, and independent audit trails maintain accuracy and transparency across custody and trading operations"
-            icon={icon1.src}
-            image={icon1.src}
+            icon={icon3.src}
+            image={image3.src}
         />
         <Card__Risk
             title="Risk Oversight"
             description="Proprietary risk models and internal monitoring ensure market discipline without exposure to client assets. No client funds are held or traded"
-            icon={icon1.src}
-            image={icon1.src}
+            icon={icon4.src}
+            image={image4.src}
         />
     </article>
 </section>
